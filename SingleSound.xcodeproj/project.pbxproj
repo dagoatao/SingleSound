@@ -13,7 +13,50 @@
 		8D077B891C6EAD8D00ABA54F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D077B871C6EAD8D00ABA54F /* Main.storyboard */; };
 		8D077B8B1C6EAD8D00ABA54F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D077B8A1C6EAD8D00ABA54F /* Assets.xcassets */; };
 		8D077B8E1C6EAD8D00ABA54F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D077B8C1C6EAD8D00ABA54F /* LaunchScreen.storyboard */; };
+		8D077B971C6EAF1C00ABA54F /* SoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D077B961C6EAF1C00ABA54F /* SoundManager.m */; };
+		8D077B9A1C6EB10000ABA54F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D077B981C6EB10000ABA54F /* AVFoundation.framework */; };
+		8D077BA31C6EC03E00ABA54F /* SingleSoundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D077BA21C6EC03E00ABA54F /* SingleSoundTests.m */; };
+		8D077BAB1C6EC0EF00ABA54F /* SoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D077B961C6EAF1C00ABA54F /* SoundManager.m */; };
+		8D077BAF1C6EC2E600ABA54F /* sound1.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 8D077BAE1C6EC2E600ABA54F /* sound1.aiff */; };
+		8DBDD1FA1C6FA64500F05FBE /* SoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBDD1F91C6FA64500F05FBE /* SoundButton.m */; };
+		8DBDD1FD1C6FA7CF00F05FBE /* SoundCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBDD1FC1C6FA7CF00F05FBE /* SoundCell.m */; };
+		8DBDD2181C6FB5F200F05FBE /* achievement.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8DBDD1FE1C6FB5F200F05FBE /* achievement.wav */; };
+		8DBDD2191C6FB5F200F05FBE /* ahh-nicely.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8DBDD1FF1C6FB5F200F05FBE /* ahh-nicely.mp3 */; };
+		8DBDD21A1C6FB5F200F05FBE /* boo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8DBDD2001C6FB5F200F05FBE /* boo.mp3 */; };
+		8DBDD21B1C6FB5F200F05FBE /* bubble.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8DBDD2011C6FB5F200F05FBE /* bubble.wav */; };
+		8DBDD21C1C6FB5F200F05FBE /* bubble1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8DBDD2021C6FB5F200F05FBE /* bubble1.wav */; };
+		8DBDD21D1C6FB5F200F05FBE /* cake-full.aif in Resources */ = {isa = PBXBuildFile; fileRef = 8DBDD2031C6FB5F200F05FBE /* cake-full.aif */; };
+		8DBDD21E1C6FB5F200F05FBE /* chat_incoming.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8DBDD2041C6FB5F200F05FBE /* chat_incoming.mp3 */; };
+		8DBDD21F1C6FB5F200F05FBE /* click0.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8DBDD2051C6FB5F200F05FBE /* click0.mp3 */; };
+		8DBDD2201C6FB5F200F05FBE /* click1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8DBDD2061C6FB5F200F05FBE /* click1.mp3 */; };
+		8DBDD2211C6FB5F200F05FBE /* doom.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8DBDD2071C6FB5F200F05FBE /* doom.mp3 */; };
+		8DBDD2221C6FB5F200F05FBE /* drumroll.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8DBDD2081C6FB5F200F05FBE /* drumroll.mp3 */; };
+		8DBDD2231C6FB5F200F05FBE /* elevator-badspeakers.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8DBDD2091C6FB5F200F05FBE /* elevator-badspeakers.mp3 */; };
+		8DBDD2241C6FB5F200F05FBE /* gavel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8DBDD20A1C6FB5F200F05FBE /* gavel.mp3 */; };
+		8DBDD2251C6FB5F200F05FBE /* ho.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8DBDD20B1C6FB5F200F05FBE /* ho.mp3 */; };
+		8DBDD2261C6FB5F200F05FBE /* laser-prep-reverse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8DBDD20C1C6FB5F200F05FBE /* laser-prep-reverse.mp3 */; };
+		8DBDD2271C6FB5F200F05FBE /* laser-prep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8DBDD20D1C6FB5F200F05FBE /* laser-prep.mp3 */; };
+		8DBDD2281C6FB5F200F05FBE /* ninja-sword.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8DBDD20E1C6FB5F200F05FBE /* ninja-sword.mp3 */; };
+		8DBDD2291C6FB5F200F05FBE /* ninja-whack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8DBDD20F1C6FB5F200F05FBE /* ninja-whack.mp3 */; };
+		8DBDD22A1C6FB5F200F05FBE /* ninja-whoosh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8DBDD2101C6FB5F200F05FBE /* ninja-whoosh.mp3 */; };
+		8DBDD22B1C6FB5F200F05FBE /* notice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8DBDD2111C6FB5F200F05FBE /* notice.mp3 */; };
+		8DBDD22C1C6FB5F200F05FBE /* sad-trombone.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 8DBDD2121C6FB5F200F05FBE /* sad-trombone.aiff */; };
+		8DBDD22D1C6FB5F200F05FBE /* select-classic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8DBDD2131C6FB5F200F05FBE /* select-classic.wav */; };
+		8DBDD22E1C6FB5F200F05FBE /* small-applause.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8DBDD2141C6FB5F200F05FBE /* small-applause.mp3 */; };
+		8DBDD22F1C6FB5F200F05FBE /* sonar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8DBDD2151C6FB5F200F05FBE /* sonar.mp3 */; };
+		8DBDD2301C6FB5F200F05FBE /* start-echo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8DBDD2161C6FB5F200F05FBE /* start-echo.mp3 */; };
+		8DBDD2311C6FB5F200F05FBE /* whoosh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8DBDD2171C6FB5F200F05FBE /* whoosh.mp3 */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8D077BA51C6EC03E00ABA54F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D077B731C6EAD8D00ABA54F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D077B7A1C6EAD8D00ABA54F;
+			remoteInfo = SingleSound;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8D077B7B1C6EAD8D00ABA54F /* SingleSound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingleSound.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +69,55 @@
 		8D077B8A1C6EAD8D00ABA54F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D077B8D1C6EAD8D00ABA54F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D077B8F1C6EAD8D00ABA54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D077B951C6EAF1C00ABA54F /* SoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundManager.h; sourceTree = "<group>"; };
+		8D077B961C6EAF1C00ABA54F /* SoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundManager.m; sourceTree = "<group>"; };
+		8D077B981C6EB10000ABA54F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8D077BA01C6EC03E00ABA54F /* SingleSoundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingleSoundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D077BA21C6EC03E00ABA54F /* SingleSoundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleSoundTests.m; sourceTree = "<group>"; };
+		8D077BA41C6EC03E00ABA54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D077BAE1C6EC2E600ABA54F /* sound1.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = sound1.aiff; path = SoundEffects/sound1.aiff; sourceTree = "<group>"; };
+		8DBDD1F81C6FA64500F05FBE /* SoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundButton.h; sourceTree = "<group>"; };
+		8DBDD1F91C6FA64500F05FBE /* SoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundButton.m; sourceTree = "<group>"; };
+		8DBDD1FB1C6FA7CF00F05FBE /* SoundCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundCell.h; sourceTree = "<group>"; };
+		8DBDD1FC1C6FA7CF00F05FBE /* SoundCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundCell.m; sourceTree = "<group>"; };
+		8DBDD1FE1C6FB5F200F05FBE /* achievement.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = achievement.wav; sourceTree = "<group>"; };
+		8DBDD1FF1C6FB5F200F05FBE /* ahh-nicely.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ahh-nicely.mp3"; sourceTree = "<group>"; };
+		8DBDD2001C6FB5F200F05FBE /* boo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = boo.mp3; sourceTree = "<group>"; };
+		8DBDD2011C6FB5F200F05FBE /* bubble.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bubble.wav; sourceTree = "<group>"; };
+		8DBDD2021C6FB5F200F05FBE /* bubble1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bubble1.wav; sourceTree = "<group>"; };
+		8DBDD2031C6FB5F200F05FBE /* cake-full.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "cake-full.aif"; sourceTree = "<group>"; };
+		8DBDD2041C6FB5F200F05FBE /* chat_incoming.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chat_incoming.mp3; sourceTree = "<group>"; };
+		8DBDD2051C6FB5F200F05FBE /* click0.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click0.mp3; sourceTree = "<group>"; };
+		8DBDD2061C6FB5F200F05FBE /* click1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click1.mp3; sourceTree = "<group>"; };
+		8DBDD2071C6FB5F200F05FBE /* doom.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = doom.mp3; sourceTree = "<group>"; };
+		8DBDD2081C6FB5F200F05FBE /* drumroll.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drumroll.mp3; sourceTree = "<group>"; };
+		8DBDD2091C6FB5F200F05FBE /* elevator-badspeakers.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "elevator-badspeakers.mp3"; sourceTree = "<group>"; };
+		8DBDD20A1C6FB5F200F05FBE /* gavel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gavel.mp3; sourceTree = "<group>"; };
+		8DBDD20B1C6FB5F200F05FBE /* ho.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ho.mp3; sourceTree = "<group>"; };
+		8DBDD20C1C6FB5F200F05FBE /* laser-prep-reverse.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "laser-prep-reverse.mp3"; sourceTree = "<group>"; };
+		8DBDD20D1C6FB5F200F05FBE /* laser-prep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "laser-prep.mp3"; sourceTree = "<group>"; };
+		8DBDD20E1C6FB5F200F05FBE /* ninja-sword.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ninja-sword.mp3"; sourceTree = "<group>"; };
+		8DBDD20F1C6FB5F200F05FBE /* ninja-whack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ninja-whack.mp3"; sourceTree = "<group>"; };
+		8DBDD2101C6FB5F200F05FBE /* ninja-whoosh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ninja-whoosh.mp3"; sourceTree = "<group>"; };
+		8DBDD2111C6FB5F200F05FBE /* notice.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = notice.mp3; sourceTree = "<group>"; };
+		8DBDD2121C6FB5F200F05FBE /* sad-trombone.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = "sad-trombone.aiff"; sourceTree = "<group>"; };
+		8DBDD2131C6FB5F200F05FBE /* select-classic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "select-classic.wav"; sourceTree = "<group>"; };
+		8DBDD2141C6FB5F200F05FBE /* small-applause.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "small-applause.mp3"; sourceTree = "<group>"; };
+		8DBDD2151C6FB5F200F05FBE /* sonar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sonar.mp3; sourceTree = "<group>"; };
+		8DBDD2161C6FB5F200F05FBE /* start-echo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "start-echo.mp3"; sourceTree = "<group>"; };
+		8DBDD2171C6FB5F200F05FBE /* whoosh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whoosh.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8D077B781C6EAD8D00ABA54F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D077B9A1C6EB10000ABA54F /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D077B9D1C6EC03E00ABA54F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,7 +130,9 @@
 		8D077B721C6EAD8D00ABA54F = {
 			isa = PBXGroup;
 			children = (
+				8D077B981C6EB10000ABA54F /* AVFoundation.framework */,
 				8D077B7D1C6EAD8D00ABA54F /* SingleSound */,
+				8D077BA11C6EC03E00ABA54F /* SingleSoundTests */,
 				8D077B7C1C6EAD8D00ABA54F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				8D077B7B1C6EAD8D00ABA54F /* SingleSound.app */,
+				8D077BA01C6EC03E00ABA54F /* SingleSoundTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +158,12 @@
 				8D077B8C1C6EAD8D00ABA54F /* LaunchScreen.storyboard */,
 				8D077B8F1C6EAD8D00ABA54F /* Info.plist */,
 				8D077B7E1C6EAD8D00ABA54F /* Supporting Files */,
+				8D077B951C6EAF1C00ABA54F /* SoundManager.h */,
+				8D077B961C6EAF1C00ABA54F /* SoundManager.m */,
+				8DBDD1F81C6FA64500F05FBE /* SoundButton.h */,
+				8DBDD1F91C6FA64500F05FBE /* SoundButton.m */,
+				8DBDD1FB1C6FA7CF00F05FBE /* SoundCell.h */,
+				8DBDD1FC1C6FA7CF00F05FBE /* SoundCell.m */,
 			);
 			path = SingleSound;
 			sourceTree = "<group>";
@@ -74,9 +171,45 @@
 		8D077B7E1C6EAD8D00ABA54F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8DBDD1FE1C6FB5F200F05FBE /* achievement.wav */,
+				8DBDD1FF1C6FB5F200F05FBE /* ahh-nicely.mp3 */,
+				8DBDD2001C6FB5F200F05FBE /* boo.mp3 */,
+				8DBDD2011C6FB5F200F05FBE /* bubble.wav */,
+				8DBDD2021C6FB5F200F05FBE /* bubble1.wav */,
+				8DBDD2031C6FB5F200F05FBE /* cake-full.aif */,
+				8DBDD2041C6FB5F200F05FBE /* chat_incoming.mp3 */,
+				8DBDD2051C6FB5F200F05FBE /* click0.mp3 */,
+				8DBDD2061C6FB5F200F05FBE /* click1.mp3 */,
+				8DBDD2071C6FB5F200F05FBE /* doom.mp3 */,
+				8DBDD2081C6FB5F200F05FBE /* drumroll.mp3 */,
+				8DBDD2091C6FB5F200F05FBE /* elevator-badspeakers.mp3 */,
+				8DBDD20A1C6FB5F200F05FBE /* gavel.mp3 */,
+				8DBDD20B1C6FB5F200F05FBE /* ho.mp3 */,
+				8DBDD20C1C6FB5F200F05FBE /* laser-prep-reverse.mp3 */,
+				8DBDD20D1C6FB5F200F05FBE /* laser-prep.mp3 */,
+				8DBDD20E1C6FB5F200F05FBE /* ninja-sword.mp3 */,
+				8DBDD20F1C6FB5F200F05FBE /* ninja-whack.mp3 */,
+				8DBDD2101C6FB5F200F05FBE /* ninja-whoosh.mp3 */,
+				8DBDD2111C6FB5F200F05FBE /* notice.mp3 */,
+				8DBDD2121C6FB5F200F05FBE /* sad-trombone.aiff */,
+				8DBDD2131C6FB5F200F05FBE /* select-classic.wav */,
+				8DBDD2141C6FB5F200F05FBE /* small-applause.mp3 */,
+				8DBDD2151C6FB5F200F05FBE /* sonar.mp3 */,
+				8DBDD2161C6FB5F200F05FBE /* start-echo.mp3 */,
+				8DBDD2171C6FB5F200F05FBE /* whoosh.mp3 */,
+				8D077BAE1C6EC2E600ABA54F /* sound1.aiff */,
 				8D077B7F1C6EAD8D00ABA54F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8D077BA11C6EC03E00ABA54F /* SingleSoundTests */ = {
+			isa = PBXGroup;
+			children = (
+				8D077BA21C6EC03E00ABA54F /* SingleSoundTests.m */,
+				8D077BA41C6EC03E00ABA54F /* Info.plist */,
+			);
+			path = SingleSoundTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +232,24 @@
 			productReference = 8D077B7B1C6EAD8D00ABA54F /* SingleSound.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8D077B9F1C6EC03E00ABA54F /* SingleSoundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D077BA71C6EC03E00ABA54F /* Build configuration list for PBXNativeTarget "SingleSoundTests" */;
+			buildPhases = (
+				8D077B9C1C6EC03E00ABA54F /* Sources */,
+				8D077B9D1C6EC03E00ABA54F /* Frameworks */,
+				8D077B9E1C6EC03E00ABA54F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D077BA61C6EC03E00ABA54F /* PBXTargetDependency */,
+			);
+			name = SingleSoundTests;
+			productName = SingleSoundTests;
+			productReference = 8D077BA01C6EC03E00ABA54F /* SingleSoundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -110,6 +261,10 @@
 				TargetAttributes = {
 					8D077B7A1C6EAD8D00ABA54F = {
 						CreatedOnToolsVersion = 7.2;
+					};
+					8D077B9F1C6EC03E00ABA54F = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 8D077B7A1C6EAD8D00ABA54F;
 					};
 				};
 			};
@@ -127,6 +282,7 @@
 			projectRoot = "";
 			targets = (
 				8D077B7A1C6EAD8D00ABA54F /* SingleSound */,
+				8D077B9F1C6EC03E00ABA54F /* SingleSoundTests */,
 			);
 		};
 /* End PBXProject section */
@@ -136,9 +292,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DBDD2201C6FB5F200F05FBE /* click1.mp3 in Resources */,
+				8DBDD2191C6FB5F200F05FBE /* ahh-nicely.mp3 in Resources */,
+				8DBDD22F1C6FB5F200F05FBE /* sonar.mp3 in Resources */,
+				8DBDD21D1C6FB5F200F05FBE /* cake-full.aif in Resources */,
 				8D077B8E1C6EAD8D00ABA54F /* LaunchScreen.storyboard in Resources */,
+				8DBDD21B1C6FB5F200F05FBE /* bubble.wav in Resources */,
+				8DBDD2181C6FB5F200F05FBE /* achievement.wav in Resources */,
+				8D077BAF1C6EC2E600ABA54F /* sound1.aiff in Resources */,
+				8DBDD2301C6FB5F200F05FBE /* start-echo.mp3 in Resources */,
+				8DBDD22D1C6FB5F200F05FBE /* select-classic.wav in Resources */,
+				8DBDD21C1C6FB5F200F05FBE /* bubble1.wav in Resources */,
 				8D077B8B1C6EAD8D00ABA54F /* Assets.xcassets in Resources */,
+				8DBDD2251C6FB5F200F05FBE /* ho.mp3 in Resources */,
+				8DBDD2221C6FB5F200F05FBE /* drumroll.mp3 in Resources */,
+				8DBDD22C1C6FB5F200F05FBE /* sad-trombone.aiff in Resources */,
+				8DBDD2231C6FB5F200F05FBE /* elevator-badspeakers.mp3 in Resources */,
+				8DBDD2241C6FB5F200F05FBE /* gavel.mp3 in Resources */,
+				8DBDD2211C6FB5F200F05FBE /* doom.mp3 in Resources */,
 				8D077B891C6EAD8D00ABA54F /* Main.storyboard in Resources */,
+				8DBDD2281C6FB5F200F05FBE /* ninja-sword.mp3 in Resources */,
+				8DBDD2271C6FB5F200F05FBE /* laser-prep.mp3 in Resources */,
+				8DBDD22A1C6FB5F200F05FBE /* ninja-whoosh.mp3 in Resources */,
+				8DBDD22B1C6FB5F200F05FBE /* notice.mp3 in Resources */,
+				8DBDD2261C6FB5F200F05FBE /* laser-prep-reverse.mp3 in Resources */,
+				8DBDD2311C6FB5F200F05FBE /* whoosh.mp3 in Resources */,
+				8DBDD22E1C6FB5F200F05FBE /* small-applause.mp3 in Resources */,
+				8DBDD21A1C6FB5F200F05FBE /* boo.mp3 in Resources */,
+				8DBDD21F1C6FB5F200F05FBE /* click0.mp3 in Resources */,
+				8DBDD2291C6FB5F200F05FBE /* ninja-whack.mp3 in Resources */,
+				8DBDD21E1C6FB5F200F05FBE /* chat_incoming.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D077B9E1C6EC03E00ABA54F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,12 +340,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D077B861C6EAD8D00ABA54F /* ViewController.m in Sources */,
+				8DBDD1FD1C6FA7CF00F05FBE /* SoundCell.m in Sources */,
+				8D077B971C6EAF1C00ABA54F /* SoundManager.m in Sources */,
 				8D077B831C6EAD8D00ABA54F /* AppDelegate.m in Sources */,
+				8DBDD1FA1C6FA64500F05FBE /* SoundButton.m in Sources */,
 				8D077B801C6EAD8D00ABA54F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8D077B9C1C6EC03E00ABA54F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D077BAB1C6EC0EF00ABA54F /* SoundManager.m in Sources */,
+				8D077BA31C6EC03E00ABA54F /* SingleSoundTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8D077BA61C6EC03E00ABA54F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D077B7A1C6EAD8D00ABA54F /* SingleSound */;
+			targetProxy = 8D077BA51C6EC03E00ABA54F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8D077B871C6EAD8D00ABA54F /* Main.storyboard */ = {
@@ -281,6 +491,30 @@
 			};
 			name = Release;
 		};
+		8D077BA81C6EC03E00ABA54F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SingleSoundTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michaelcolon.SingleSoundTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SingleSound.app/SingleSound";
+			};
+			name = Debug;
+		};
+		8D077BA91C6EC03E00ABA54F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SingleSoundTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michaelcolon.SingleSoundTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SingleSound.app/SingleSound";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -300,6 +534,16 @@
 				8D077B941C6EAD8D00ABA54F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D077BA71C6EC03E00ABA54F /* Build configuration list for PBXNativeTarget "SingleSoundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D077BA81C6EC03E00ABA54F /* Debug */,
+				8D077BA91C6EC03E00ABA54F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

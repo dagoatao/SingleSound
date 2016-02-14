@@ -17,9 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="happy-valentines-day.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gkf-Go-9tA">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYN-0Q-7aE">
                                 <rect key="frame" x="246" y="372" width="100" height="100"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
@@ -33,8 +30,11 @@
                                 <color key="textColor" red="0.12941176469999999" green="0.8980392157" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="happy-valentines-day.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gkf-Go-9tA">
+                                <rect key="frame" x="-75" y="0.0" width="750" height="600"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.31764705879999999" green="0.23529411759999999" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.4431372549" green="0.36862745099999999" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="QYN-0Q-7aE" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="122" id="FOU-qS-GWt"/>
                             <constraint firstItem="Gkf-Go-9tA" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Ktu-dK-diW"/>

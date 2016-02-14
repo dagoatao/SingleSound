@@ -10,6 +10,8 @@
 
 @implementation SoundButton
 
+#pragma mark - initialization
+
 - (id) initWithFrame:(CGRect)frame {
   self = [super initWithFrame:frame];
   [self style];
@@ -22,8 +24,33 @@
   return self;
 }
 
+#pragma mark - button style
+
+/** style the button
+ */
 - (void) style {
-    self.layer.cornerRadius = self.frame.size.width*0.5;
+  // round button corners.
+  self.layer.cornerRadius = self.frame.size.width*0.5;
+  [self getPresets];
+}
+
+/** get presets after style
+ */
+- (void) getPresets {
+  // get color.
+    self.originalColor = self.backgroundColor;
+}
+
+#pragma mark - flash
+/*** flash the button.
+ */
+- (void) flash {
+  // run animation to flash button.
+  [UIView animateWithDuration:0.10 animations:^{
+    self.backgroundColor = [UIColor blueColor];
+  } completion:^(BOOL finished) {
+    self.backgroundColor = self.originalColor;
+  }];
 }
 
 /*

@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVAudioPlayer.h>
 #import "SoundButton.h"
 
-@interface SoundCell : UICollectionViewCell
+@interface SoundCell : UICollectionViewCell <AVAudioPlayerDelegate>
+
 @property (nonatomic, strong) NSString *soundName;
+@property (nonatomic, weak) IBOutlet UILabel *name;
+@property (nonatomic, weak) IBOutlet UILabel *duration;
 @property (nonatomic, weak) IBOutlet SoundButton *button;
+
 @end

@@ -13,6 +13,7 @@
 
 @interface SoundManager()
 @property (nonatomic, strong) NSMutableDictionary<NSString*, AVAudioPlayer *> *sounds;
+@property (nonatomic, strong) NSArray<NSURL*> *urlArray;
 @end
 
 @implementation SoundManager
@@ -36,6 +37,31 @@
   // define (private) Mutable Dictionary
   _sounds = [[NSMutableDictionary alloc] initWithCapacity:MAX_SOUND_EFFECTS];
   return self;
+}
+
+#pragma mark - Sound loading
+
+/** Find all sounds (wav, mp3) in main app bundle.
+ */
+- (void) findSoundsInBundle {
+  NSArray<NSURL*> *wavArray = [[NSBundle mainBundle] URLsForResourcesWithExtension:@"wav" subdirectory:nil];
+  NSArray<NSURL*> *mp3Array = [[NSBundle mainBundle] URLsForResourcesWithExtension:@"mp3" subdirectory:nil];
+  self.urlArray = [wavArray arrayByAddingObjectsFromArray:mp3Array];
+}
+
+/** grab sounds contained in main bundle.
+ */
+- (NSArray<NSURL*>*) soundsInBundle {
+  return self.urlArray;
+}
+
+/** Load SoundManager with sounds from the main bundle.
+ */
+- (void) loadSoundManagerWithSounds {
+  [self findSoundsInBundle];
+  for (NSURL*url in [self soundsInBundle]) {
+    [self addSoundFileWithFileName:url.relativeString];
+  }
 }
 
 # pragma mark - Adding sounds to manager.
@@ -82,7 +108,9 @@ Name must conform to either a .mp3 or .aac extension. Expected format is filenam
 }
 
 # pragma mark - Parse file name.
-
+/*** returns file components given a filename with extension.
+ 
+ */
 - (NSArray<NSString*>*) fileNameComponents:(NSString*)fileName {
   // check file name format
   NSArray<NSString*> *components = [fileName componentsSeparatedByString:@"."];
@@ -95,49 +123,105 @@ Name must conform to either a .mp3 or .aac extension. Expected format is filenam
 
 
 # pragma mark - Removing sounds from manager
-
+/*** Remove all sounds from sound manager.
+ 
+ */
 
 - (void) removeAllSounds {
   [_sounds removeAllObjects];
 }
+/*** Remove sound by key name/file name.
+ Filename extension is removed when added to the sound manager.
+ Filename is not the same as display name.>
+ */
 
 - (void) removeSoundByFileName:(NSString*)fileName {
-  NSArray<NSString*> *components = [self fileNameComponents:fileName];
-  if (components == nil) return;
-  [_sounds removeObjectForKey:components[0]];
+  if (fileName==nil) return;
+  [_sounds removeObjectForKey:fileName];
 }
 
 
 # pragma mark - Playing sounds
 
+/** Play sound with fileName or key.
+ No exrtension should be used.
+ 
+ */
+
 - (void) playSoundFileWithName:(NSString*)name {
   if (! [self verifySound:name]) return;
   [_sounds[name] play];
-  
+}
+
+/** Play sound with filename or key. Also includes delegate for AVAudioPlayer status.
+
+*/
+
+- (void) playSoundFileWithName:(NSString*)name avPlayerDelegate:(id)delegate {
+  if (! [self verifySound:name]) return;
+  _sounds[name].delegate = delegate;
+  [_sounds[name] play];
 }
 
 # pragma mark - Sound validation.
+/** Check to see if a given sound is playing.
+ */
+
+- (BOOL) isPlayingSoundFileName:(NSString*)name {
+  return ([_sounds[name] isPlaying]);
+}
+
+/** Verify that SoundManager has sounds and if sound exists in SoundManager.
+ */
 
 - (NSInteger) verifySound:(NSString*)name {
   return (NSInteger)([self hasSounds] && [self soundExists:name]);
 }
 
+/** Verify that SoundManager has sounds.
+ */
 - (NSInteger) hasSounds {
   return (NSInteger)(_sounds && [self numberOfSounds] > 0);
 }
 
+/** Verify the SoundManager has sound given in name argument.
+ */
 - (NSInteger) soundExists:(NSString*)name {
   return (NSInteger)([[_sounds allKeys] containsObject:name]);
 }
 
+/** Check how many sounds SoundManager has available.
+ */
 - (NSInteger) numberOfSounds {
   return _sounds.count;
 }
 
 #pragma mark - Find Sounds 
+
+/** Get the name of the sound at index.
+ */
 - (NSString*) nameForSoundAtIndex:(NSInteger)row {
   if ([self numberOfSounds] <= row) return nil;
   return [_sounds allKeys][row];
+}
+
+/** Static method to format filename/NSDictionaryKey to a display name
+ */
++ (NSString*) displayNameForFileName:(NSString*)name {
+  return [[name stringByReplacingOccurrencesOfString:@"-" withString:@" "] stringByReplacingOccurrencesOfString:@"_" withString:@" "].capitalizedString;
+}
+
+/** Grab a string representation of the duration of the audio at row.
+ */
+- (NSString*) durationForSoundAtIndex:(NSInteger)row {
+  AVAudioPlayer *sound = _sounds[[_sounds allKeys][row]];
+  return [NSString stringWithFormat:@"Length: %.2f", sound.duration];
+}
+
+/** Return an AVAudioPlayer from a given key/filename value.
+ */
+- (AVAudioPlayer*) soundForName:(NSString*)name {
+  return _sounds[name];
 }
 
 # pragma mark - Console writing.

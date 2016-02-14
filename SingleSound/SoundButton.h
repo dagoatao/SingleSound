@@ -10,4 +10,6 @@
 
 
 @interface SoundButton : UIButton
+@property (nonatomic, strong) UIColor *originalColor;
+- (void) flash;
 @end

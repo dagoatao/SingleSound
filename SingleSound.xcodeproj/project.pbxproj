@@ -51,6 +51,9 @@
 		8DEDDE621C701DEC00517113 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DEDDE611C701DEC00517113 /* button.png */; };
 		8DEDDE641C70219500517113 /* speech_bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DEDDE631C70219500517113 /* speech_bubble.png */; };
 		8DEDDE6E1C70314A00517113 /* Earth.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DEDDE6D1C70314A00517113 /* Earth.png */; };
+		8DEFF4791C714E2200FF3C5A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFF4781C714E2200FF3C5A /* README.md */; };
+		8DEFF47B1C714F6B00FF3C5A /* IMG_3422.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 8DEFF47A1C714F6B00FF3C5A /* IMG_3422.PNG */; };
+		8DEFF47D1C714F7100FF3C5A /* IMG_3423.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 8DEFF47C1C714F7100FF3C5A /* IMG_3423.PNG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +119,9 @@
 		8DEDDE611C701DEC00517113 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		8DEDDE631C70219500517113 /* speech_bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speech_bubble.png; sourceTree = "<group>"; };
 		8DEDDE6D1C70314A00517113 /* Earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Earth.png; sourceTree = "<group>"; };
+		8DEFF4781C714E2200FF3C5A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8DEFF47A1C714F6B00FF3C5A /* IMG_3422.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IMG_3422.PNG; path = Docs/IMG_3422.PNG; sourceTree = "<group>"; };
+		8DEFF47C1C714F7100FF3C5A /* IMG_3423.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IMG_3423.PNG; path = Docs/IMG_3423.PNG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,9 @@
 				8D077B7D1C6EAD8D00ABA54F /* SingleSound */,
 				8D077BA11C6EC03E00ABA54F /* SingleSoundTests */,
 				8D077B7C1C6EAD8D00ABA54F /* Products */,
+				8DEFF4781C714E2200FF3C5A /* README.md */,
+				8DEFF47A1C714F6B00FF3C5A /* IMG_3422.PNG */,
+				8DEFF47C1C714F7100FF3C5A /* IMG_3423.PNG */,
 			);
 			sourceTree = "<group>";
 		};
@@ -396,9 +405,11 @@
 				8D077B8B1C6EAD8D00ABA54F /* Assets.xcassets in Resources */,
 				8DBDD2251C6FB5F200F05FBE /* ho.mp3 in Resources */,
 				8DBDD2221C6FB5F200F05FBE /* drumroll.mp3 in Resources */,
+				8DEFF47D1C714F7100FF3C5A /* IMG_3423.PNG in Resources */,
 				8DBDD22C1C6FB5F200F05FBE /* sad-trombone.aiff in Resources */,
 				8DBDD2231C6FB5F200F05FBE /* elevator-badspeakers.mp3 in Resources */,
 				8DBDD2241C6FB5F200F05FBE /* gavel.mp3 in Resources */,
+				8DEFF47B1C714F6B00FF3C5A /* IMG_3422.PNG in Resources */,
 				8DBDD2211C6FB5F200F05FBE /* doom.mp3 in Resources */,
 				8D077B891C6EAD8D00ABA54F /* Main.storyboard in Resources */,
 				8DBDD2281C6FB5F200F05FBE /* ninja-sword.mp3 in Resources */,
@@ -437,6 +448,7 @@
 				8D077B971C6EAF1C00ABA54F /* SoundManager.m in Sources */,
 				8D077B831C6EAD8D00ABA54F /* AppDelegate.m in Sources */,
 				8DBDD1FA1C6FA64500F05FBE /* SoundButton.m in Sources */,
+				8DEFF4791C714E2200FF3C5A /* README.md in Sources */,
 				8D077B801C6EAD8D00ABA54F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
